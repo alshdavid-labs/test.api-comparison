@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Test.Controllers
+namespace Posts.Controllers
 {
     [Route("api/[controller]")]
     public class IndexController: Controller 
