@@ -3,8 +3,8 @@ FROM golang:latest
 WORKDIR /go/src/app
 COPY . .
 
-RUN go get -d ./...
-RUN go install ./...
+RUN cd ./src && go get -d ./...
+RUN go build
 
 CMD ["app"]
 EXPOSE 8080
